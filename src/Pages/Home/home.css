@@ -1,0 +1,214 @@
+/**************** sectionOne styles start *****************/
+:root {
+  --heading: #162466;
+  --text: #6a6969;
+  --setTwoBg: #f6f6f9;
+  --input-bg: #F6F6F9;
+}
+
+/**************** sectionTwo styles starts *****************/
+/* .parent {
+  margin-bottom: 9rem;
+} */
+.sectionTwo {
+  background-color: var(--setTwoBg);
+  height: 113vh;
+  padding: 6rem 35px;
+  text-align: center;
+  transition: 0.4s ease;
+}
+.sectionTwo .text_section h3 {
+  font-size: 50px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: var(--heading);
+  transition: 0.7s ease-out;
+  transition: 0.4s ease;
+}
+.sectionTwo .text_section p {
+  width: 73%;
+  font-size: 25px;
+  margin: auto;
+  margin-bottom: 15px;
+  color: var(--text);
+  transition: 0.7s ease-out;
+}
+.animated_area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -28rem;
+  position: relative;
+  transition: 0.7s ease-out;
+}
+.animated_area .image_one img,
+.animated_area .image_two img {
+  flex: 1;
+  width: 30rem;
+  transition: 0.7s ease-out;
+}
+.animated_area .image_two img {
+  /* position: absolute; */
+  left: 62%;
+  top: 0;
+}
+.heading_two {
+  position: relative;
+  margin: auto;
+  justify-items: center;
+  width: 650px;
+  transition: 0.4s ease;
+}
+.angleImage_one img {
+  position: absolute;
+  left: 0;
+  width: 1.3rem;
+}
+.angleImage_two img {
+  position: absolute;
+  right: 0;
+  width: 1.3rem;
+}
+
+/**************** sectionTwo styles end *****************/
+
+/**************** sectionTwo mediq query starts *****************/
+@media (max-width: 1045px) {
+  .sectionTwo {
+    background-color: var(--setTwoBg);
+    height: 133vh;
+    padding: 6rem 35px;
+    text-align: center;
+  }
+}
+@media (max-width: 914px) {
+  .animated_area .image_one img,
+  .animated_area .image_two img {
+    flex: 1;
+    width: 25rem;
+  }
+  .animated_area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20rem;
+    position: relative;
+    transition: 0.7s ease-out;
+  }
+  .sectionTwo {
+    background-color: var(--setTwoBg);
+    height: 113vh;
+    padding: 6rem 35px;
+    text-align: center;
+  }
+}
+@media (max-width: 773px) {
+  .sectionTwo .text_section p {
+    width: 80%;
+    font-size: 19px;
+    margin: auto;
+    margin-bottom: 15px;
+    color: var(--text);
+    transition: 0.7s ease-out;
+  }
+  .sectionTwo .text_section h3 {
+    font-size: 45px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: var(--heading);
+    transition: 0.7s ease-out;
+  }
+}
+@media (max-width: 742px) {
+  .sectionTwo .text_section h3 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: var(--heading);
+    transition: 0.7s ease-out;
+  }
+  .heading_two {
+    position: relative;
+    margin: auto;
+    justify-items: center;
+    width: 550px;
+  }
+  .animated_area .image_one img,
+  .animated_area .image_two img {
+    flex: 1;
+    width: 25rem;
+    transition: 0.7s ease-out;
+  }
+  .sectionTwo {
+    background-color: var(--setTwoBg);
+    height: 100vh;
+    padding: 6rem 35px;
+    text-align: center;
+  }
+}
+@media (max-width: 617px) {
+  .sectionTwo .text_section p {
+    width: 100%;
+    font-size: 19px;
+  }
+  .sectionTwo .text_section h3 {
+    font-size: 30px;
+  }
+  .animated_area .image_one img,
+  .animated_area .image_two img {
+    width: 16rem;
+  }
+  .sectionTwo {
+    height: 90vh;
+    padding: 4rem 35px;
+  }
+  .animated_area {
+    margin-top: -15rem;
+  }
+  .heading_two {
+    width: 400px;
+  }
+  .angleImage_one img,
+  .angleImage_two img {
+    width: 0.9rem;
+  }
+}
+
+@media (max-width: 478px) {
+  .sectionTwo .text_section p {
+    width: 100%;
+    font-size: 15px;
+  }
+  .sectionTwo .text_section h3 {
+    font-size: 18px;
+  }
+  .animated_area .image_one img,
+  .animated_area .image_two img {
+    width: 6rem;
+  }
+  .sectionTwo {
+    height: 55vh;
+    padding: 3rem 35px;
+  }
+  .animated_area {
+    margin-top: -5.8rem;
+  }
+  .heading_two {
+    width: 240px;
+  }
+  .angleImage_one img,
+  .angleImage_two img {
+    width: 0.6rem;
+  }
+}
+/**************** sectionTwo mediq query end *****************/
