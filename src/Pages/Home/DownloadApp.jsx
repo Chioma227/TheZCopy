@@ -6,14 +6,14 @@ import playStoreLogo from "../../images/Google Play logo.png";
 const DownloadApp = () => {
   return (
     <>
-      <main className="w-full h-fit lg:px-20 md:px-10 mb-16">
+      <main className="w-full h-fit lg:px-20 md:px-10 mb-2">
         <section className="bg-darkblue-100 text-white lg:px-9 md:px-6 xs:px-5 py-12 lg:flex md:items-start sm:items-start sm:px-5  lg:flex-row md:flex md:flex-col-reverse sm:flex sm:flex-col-reverse flex flex-col-reverse  lg:items-center justify-between">
           <div className="lg:w-[69%] md:w-[79%] w-[100%]">
             <h2 className="font-bold lg:text-4xl md:text-2xl lg:mb-3 md:mb-2 sm:mb-2 xs:mb-2 leading-5 transition-all">
               Download TheZ Finance Mobile App to Easily sell your crypto
               currency
             </h2>
-            <p className="lg:text-sm md:text-xs font-sans w-[89%] xs:text-xs transition-all">
+            <p className="lg:text-sm md:text-xs font-sans w-[89%] xs:text-[.8rem] transition-all">
               Download TheZ Finance Mobile App from Google Playstore and
               Appstore to enjoy seamless transaction of your favourite crypto
               currency quickly and with ease
@@ -58,7 +58,7 @@ const DownloadApp = () => {
               </a>
             </div>
           </div>
-          <div className="lg:w-[30rem] md:w-[20rem] sm:w-[15rem] w-[10rem]">
+          <div className="lg:w-[30rem] md:w-[20rem] sm:w-[15rem] w-[13rem]">
             <img src={phoneGroup} alt="" />
           </div>
         </section>

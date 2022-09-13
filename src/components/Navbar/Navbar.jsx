@@ -7,12 +7,12 @@ export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className="w-full bg-white lg:px-[5rem]  md:px-8 sm:px-14 px-9">
+    <nav className="w-full bg-white lg:px-[5rem]  md:px-8 sm:px-12 px-6">
       <div className="mx-auto  justify-between md:items-center md:flex">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
              <Link to="/">
-             <img src={image} alt="" className="w-2/5" />
+             <img src={image} alt="" className="lg:w-2/5 sm:w-[100px] w-[70px]" />
              </Link>
             <div className="md:hidden">
               <button

@@ -5,7 +5,7 @@ const SectionOne = () => {
   return (
     <>
     {/* lg:pl-[5rem] sm:px-14 px-4 md:pl-8 sm:pl-14 */}
-      <main className="mt-[30px] lg:pl-[5rem] lg:px-0 md:px-0 sm:px-14 md:pl-8 px-9">
+      <main className="mt-[30px] lg:pl-[5rem] lg:px-0 md:px-0 sm:px-12 md:pl-[2.5rem] px-6">
        <article className="flex items-center lg:mb-[9rem] md:mb-[7rem] sm:mb-[6rem] mb-[3rem] transition-all">
        <section className="flex-1 ">
           <h1 className="text-darkblue-100 font-bold lg:text-[3.3rem] md:text-[2.5rem] sm:text-[2.8rem] text-[1.8rem] lg:mb-5 md:mb-3 sm:mb-4 mb-3 select-none">

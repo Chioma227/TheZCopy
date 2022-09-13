@@ -7,7 +7,7 @@ import { QUICKLINKS, SOCIALS} from "./Menu";
 
 const ItemsContainer = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-7 lg:px-20 px-8 py-16 w-fit m-auto">
+    <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-7 lg:px-20 px-6 py-16 w-fit m-auto">
       <div>
         <img src={image} alt="logo" className="w-20 lg:w-2/5 mb-3" />
         <p className="text-grey-100">

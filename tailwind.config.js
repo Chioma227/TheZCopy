@@ -12,6 +12,9 @@ module.exports = {
         lightblue:{
           "100": "#F6F6F9"
         },
+        lighterblue:{
+          "100":"#f6f6f9"
+        },
         grey:{
           "100":"#6a6969"
         }

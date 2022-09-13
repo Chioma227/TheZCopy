@@ -5,14 +5,14 @@ import check from "../../images/checkIcon.png";
 const SectionThree = () => {
   return (
     <>
-      <article className="lg:flex md:flex hidden items-center justify-between w-full ml-auto mr-auto px-20 lg:mb-20">
+      <article className="lg:flex md:flex hidden items-center justify-between w-full ml-auto mr-auto lg:px-20 md:px-[2.5rem] lg:mb-20">
         <main className="about_section flex-grow-2 flex-shrink-1">
           <aside>
             <section className="bg-white w-[100%] shadow-md rounded-tl-3xl rounded-tr-sm rounded-b-sm mt-5">
-              <div className="flex items-baseline gap-6 px-2 py-3">
+              <div className="flex items-baseline gap-6 px-2 py-7">
                 <img src={check} alt="" className="w-[20px]" />
                 <div>
-                  <h3 className="text-[1.4rem] font-bold text-gray-800 mb-2">
+                  <h3 className="text-[1.4rem] font-bold text-gray-800 mb-3">
                     Safe Transaction Security
                   </h3>
                   <p className="text-sm md:text-lg lg:text-xl text-grey-100">
@@ -24,10 +24,10 @@ const SectionThree = () => {
               </div>
             </section>
             <section className="bg-white w-[100%] shadow-md rounded-tl-3xl rounded-tr-sm rounded-b-sm mt-5">
-              <div className="flex items-baseline gap-6 px-2  py-3">
+              <div className="flex items-baseline gap-6 px-2  py-7">
                 <img src={check} alt="" className="w-[20px]" />
                 <div>
-                  <h3 className="text-[1.4rem] font-bold text-gray-800 mb-2">
+                  <h3 className="text-[1.4rem] font-bold text-gray-800 mb-3">
                     Quick Transaction Verification and Payment
                   </h3>
                   <p className="text-xl text-grey-100">
@@ -39,10 +39,10 @@ const SectionThree = () => {
               </div>
             </section>
             <section className="bg-white w-[100%] shadow-md rounded-tl-3xl rounded-tr-sm rounded-b-sm mt-5">
-              <div className="flex items-baseline gap-6 px-2 py-3">
+              <div className="flex items-baseline gap-6 px-2 py-7">
                 <img src={check} alt="" className="w-[20px]" />
                 <div>
-                  <h3 className="text-[1.4rem] font-bold text-gray-800 mb-2">
+                  <h3 className="text-[1.4rem] font-bold text-gray-800 mb-3">
                     Great Customer Support
                   </h3>
                   <p className="text-xl text-grey-100">
@@ -56,14 +56,14 @@ const SectionThree = () => {
           </aside>
         </main>
         <section className="flex-1 flex-basis">
-         <div className="ml-auto lg:w-[70%] md:w-[300px] sm:w-[250px] w-[200px] ">
+         <div className="ml-auto lg:w-[90%] md:w-[300px] sm:w-[250px] w-[200px] ">
          <img src={imageOne} alt="" className="w-[100%] single" />
          </div>
         </section>
       </article>
 
 
-      <main className="lg:hidden md:hidden block sm:px-20 xs:px-9 about_section">
+      <main className="lg:hidden md:hidden block sm:px-12 px-6 about_section">
           <aside>
             <section className="bg-white w-[100%] shadow-md rounded-tl-3xl rounded-tr-sm rounded-b-sm lg:mt-5 md:mt-4 mt-2">
               <div className="flex items-baseline gap-6 px-2 py-3">
@@ -72,7 +72,7 @@ const SectionThree = () => {
                   <h3 className="lg:text-[1.4rem] md:text-[1.2rem] text-1.1rem font-bold text-gray-800 mb-2">
                   Safe Transaction Security
                   </h3>
-                  <p className="sm:text-[1.2rem] text-[.9rem] text-grey-100">
+                  <p className="sm:text-[1.2rem] text-[1rem] text-grey-100">
                   TheZ Finance Mobile App is one that provides safe and
                     secured transaction experience by means of strict
                     transaction verification process.
@@ -87,7 +87,7 @@ const SectionThree = () => {
                   <h3 className="lg:text-[1.4rem] md:text-[1.2rem] text-1.1rem font-bold text-gray-800 mb-2">
                   Quick Transaction Verification and Payment
                   </h3>
-                  <p className="sm:text-[1.2rem] text-[.9rem] text-grey-100">
+                  <p className="sm:text-[1.2rem] text-[1rem] text-grey-100">
                   Verification of transaction is seamless and absolutely
                     transparent. After verification, Payment is done immediately
                     with zero or no worries.
@@ -102,7 +102,7 @@ const SectionThree = () => {
                   <h3 className="lg:text-[1.4rem] md:text-[1.2rem] text-1.1rem font-bold text-gray-800 mb-2">
                   Great Customer Support
                   </h3>
-                  <p className="sm:text-[1.2rem] text-[.9rem] text-grey-100">
+                  <p className="sm:text-[1.2rem] text-[1rem] text-grey-100">
                   Our Customer support is 24 hours active to respond to
                     transaction disputes, queries or questions that might need
                     answers.
