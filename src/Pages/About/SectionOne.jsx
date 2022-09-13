@@ -3,6 +3,11 @@ import { motion } from "framer-motion";
 import imageOne from "../../images/Rectangle 13.png";
 import imageTwo from "../../images/Rectangle 2045.png";
 import phoneOne from '../../images/phone2.png'
+import { useAnimation } from "framer-motion";
+import { useState } from "react";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+
 
 const firstMotion = {
   rest:{
@@ -38,6 +43,39 @@ const secondMotion = {
 }
 
 const SectionTwo = () => {
+  const {ref, inView} = useInView();
+  const animationOne = useAnimation()
+  const animationTwo = useAnimation()
+  useEffect(()=>{
+    if(inView){
+      animationOne.start({
+        x: "-10vw",
+        transition:{type:"tween", duration:0.5}
+      })
+    }
+    if(!inView){
+      animationOne.start({
+        x: 0,
+        transition:{type:"tween", duration:0.5}
+      })
+    }
+  }, inView)
+
+  useEffect(()=>{
+    if(inView){
+      animationTwo.start({
+        x: "10vw",
+        transition:{type:"tween", duration:0.5}
+      })
+    }
+    if(!inView){
+      animationTwo.start({
+        x: 0,
+        transition:{type:"tween", duration:0.5}
+      })
+    }
+  }, inView)
+
   return (
     <>
       <article className="lg:mb-32 md:mb-32 sm:mb-24 xs:mb-14 mb-3">
@@ -60,7 +98,9 @@ const SectionTwo = () => {
             </p>
           </section>
         </main>
-        <motion.section initial="rest" whileHover="hover" animate="rest" className="relative flex w-full justify-center mx-auto lg:mt-[-28rem] md:mt-[-23rem] sm:mt-[-18rem] mt-[-10rem] lg:mb-[48rem] md:mb-[35rem] sm:mb-[30rem] mb-[18rem]">
+
+        {/* desktop animation start */}
+        <motion.section initial="rest" whileHover="hover" animate="rest" className="relative lg:flex hidden w-full justify-center mx-auto lg:mt-[-28rem] md:mt-[-23rem] sm:mt-[-18rem] mt-[-10rem] lg:mb-[48rem] md:mb-[35rem] sm:mb-[30rem] mb-[18rem]">
           <motion.div
           variants={firstMotion}
             className="lg:w-[480px] md:w-[380px] sm:w-[320px] absolute w-[172px] lg:mr-[320px] md:mr-[290px] sm:mr-[250px] mr-[120px]"
@@ -73,6 +113,24 @@ const SectionTwo = () => {
             <img src={phoneOne} alt="" />
           </motion.div>
         </motion.section>
+        {/* desktop animation ends */}
+
+        {/* medium screen animation starts */}
+        <motion.section ref={ref} className="relative lg:hidden flex w-full justify-center mx-auto lg:mt-[-28rem] md:mt-[-23rem] sm:mt-[-18rem] mt-[-10rem] lg:mb-[48rem] md:mb-[35rem] sm:mb-[30rem] mb-[18rem]">
+          <motion.div
+          animate={animationOne}
+            className="lg:w-[480px] md:w-[380px] sm:w-[320px] absolute w-[172px] lg:mr-[320px] md:mr-[290px] sm:mr-[250px] mr-[120px]"
+          >
+            <img src={phoneOne} alt="" className=" rotate-[-50deg]"/>
+          </motion.div>
+          <motion.div 
+          animate={animationTwo}
+          className="lg:w-[480px] md:w-[380px] sm:w-[320px] w-[172px] absolute lg:left-[49%] md:left-[47%] sm:left-[46.9%] left-[44%] top-0">
+            <img src={phoneOne} alt="" />
+          </motion.div>
+        </motion.section>
+        {/* medium screen animation ends */}
+
       </article>
     </>
   );
