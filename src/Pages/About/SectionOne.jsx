@@ -79,7 +79,7 @@ const SectionTwo = () => {
   return (
     <>
       <article className="lg:mb-32 md:mb-32 sm:mb-24 xs:mb-14 mb-3">
-        <main className="lg:h-[110vh] md:h-[100vh] sm:h-[80vh] h-[70vh] bg-lighterblue-100 lg:px-[5rem] lg:py-[4.4rem] md:py-[4rem] sm:py-[3.4rem] xs:py-[2.7rem] w-full md:px-8 sm:px-14 xs-px-9 text-center">
+        <main className="lg:h-[110vh] md:h-[100vh] sm:h-[80vh] h-[60vh] bg-lighterblue-100 lg:px-[5rem] lg:py-[4.4rem] md:py-[4rem] sm:py-[3.4rem] xs:py-[2.7rem] w-full md:px-8 sm:px-14 xs-px-9 text-center">
           <section className="text_section">
             <div className="relative mx-auto items-center lg:w-[650px] md:w-[440px] sm:w-[390px] w-[280px]">
               <div className="absolute left-0 lg:w-[1.3rem] md:w-[1rem] sm:w-[.9rem] w-[.7rem]">
@@ -116,7 +116,7 @@ const SectionTwo = () => {
         {/* desktop animation ends */}
 
         {/* medium screen animation starts */}
-        <motion.section ref={ref} className="relative lg:hidden flex w-full justify-center mx-auto lg:mt-[-28rem] md:mt-[-23rem] sm:mt-[-18rem] mt-[-10rem] lg:mb-[48rem] md:mb-[35rem] sm:mb-[30rem] mb-[18rem]">
+        <motion.section ref={ref} className="relative lg:hidden flex w-full justify-center mx-auto lg:mt-[-28rem] md:mt-[-23rem] sm:mt-[-18rem] mt-[-9rem] lg:mb-[48rem] md:mb-[35rem] sm:mb-[30rem] mb-[18rem]">
           <motion.div
           animate={animationOne}
             className="lg:w-[480px] md:w-[380px] sm:w-[320px] absolute w-[172px] lg:mr-[320px] md:mr-[290px] sm:mr-[250px] mr-[120px]"
