@@ -9,13 +9,13 @@ const SectionTwo = () => {
     <>
       {/* section displayed on large and medium screen start */}
 
-      <article className=" md:flex lg:flex hidden items-center w-full ml-auto mr-auto px-20 md:px-[2.5rem] lg:mb-32 mb-10">
-        <section className="flex-1 flex-basis">
-          <div className="lg:w-[85%] md:w-[300px] sm:w-[250px] w-[200px]  transition-all">
-            <img src={imageOne} alt="" className="w-[100%]" />
-          </div>
+      <article className=" md:flex lg:flex hidden items-center gap-[3rem] w-full lg:px-[7rem] md:px-[2.5rem] lg:mb-32 mb-10">
+        <section className="flex-1 flex-basis flex justify-center items-center">
+            <div className="lg:w-[350px] md:w-[300px] sm:w-[250px] w-[200px]  transition-all">
+              <img src={imageOne} alt="" className="w-[100%] object-cover" />
+            </div>
         </section>
-        <main className="about_section w-[100%] flex-1">
+        <main className="about_section w-[100%] ">
           <div className="relative lg:w-[90%] md:w-[76%]">
             <div className="absolute left-0 lg:w-[1.3rem] md:w-[1rem]">
               <img src={angleImg1} alt="" />

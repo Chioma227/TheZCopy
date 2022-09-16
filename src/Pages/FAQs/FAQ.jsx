@@ -10,7 +10,7 @@ const FAQ = () => {
 
   return (
     <>
-      <article className="lg:px-[5rem] md:px-[2.5rem] sm:px-14 px-6 mt-[30px] md:mb-[9rem] mb-[5rem]">
+      <article className="lg:px-[7rem] md:px-[2.5rem] sm:px-14 px-6 mt-[30px] md:mb-[9rem] mb-[5rem]">
         <div className="md:mb-6 mb-4">
           <div className="relative lg:w-[65%] md:w-[445px] sm:w-[500px] w-[280px]">
             <div className="absolute left-0 lg:w-[1.3rem] md:w-[1rem] sm:w-[.9rem] w-[.7rem]">
@@ -23,12 +23,12 @@ const FAQ = () => {
               Frequently Asked Questions
             </h2>
           </div>
-          <p className="lg:text-[1.4rem] md:text-xl sm:text-[1.2rem] text-[.9rem]  lg:w-[65%] text-grey-100">
+          <p className="lg:text-[1.4rem] md:text-xl sm:text-[1.2rem] text-[1rem]  lg:w-[62%] text-grey-100">
             Our FAQs comprises of different questions that you might have,
             alongside their answers.{" "}
           </p>
         </div>
-        <main className="lg:flex md:flex block items-center justify-center gap-20">
+        <main className="lg:flex md:flex block items-center gap-20">
           <section className="transition-all">
             {questions.map((question) => {
               return <Questions key={question.id} {...question} />;
@@ -36,7 +36,7 @@ const FAQ = () => {
           </section>
 
           <section className="">
-            <div className="bg-darkblue-100 lg:w-[25rem] md:w-[20rem] md:px-5 h-fit md:py-12 py-9 text-center text-white flex-1">
+            <div className="bg-darkblue-100 lg:w-[22rem] md:w-[20rem] md:px-5 h-fit md:py-12 py-9 text-center text-white flex-1">
               <div className=" w-16 mx-auto mb-4">
                 <img src={questionMessage} alt="question message icon" />
               </div>

@@ -99,8 +99,7 @@ const SectionTwo = () => {
           </section>
         </main>
 
-        {/* desktop animation start */}
-        <motion.section initial="rest" whileHover="hover" animate="rest" className="relative lg:flex hidden w-full justify-center mx-auto lg:mt-[-28rem] md:mt-[-23rem] sm:mt-[-18rem] mt-[-10rem] lg:mb-[48rem] md:mb-[35rem] sm:mb-[30rem] mb-[18rem]">
+        <motion.section initial="rest" whileHover="hover" animate="rest" className="relative flex w-full justify-center mx-auto lg:mt-[-28rem] md:mt-[-23rem] sm:mt-[-18rem] mt-[-10rem] lg:mb-[48rem] md:mb-[35rem] sm:mb-[30rem] mb-[18rem]">
           <motion.div
           variants={firstMotion}
             className="lg:w-[480px] md:w-[380px] sm:w-[320px] absolute w-[172px] lg:mr-[320px] md:mr-[290px] sm:mr-[250px] mr-[120px]"
@@ -113,23 +112,6 @@ const SectionTwo = () => {
             <img src={phoneOne} alt="" />
           </motion.div>
         </motion.section>
-        {/* desktop animation ends */}
-
-        {/* medium screen animation starts */}
-        <motion.section ref={ref} className="relative lg:hidden flex w-full justify-center mx-auto lg:mt-[-28rem] md:mt-[-23rem] sm:mt-[-18rem] mt-[-9rem] lg:mb-[48rem] md:mb-[35rem] sm:mb-[30rem] mb-[18rem]">
-          <motion.div
-          animate={animationOne}
-            className="lg:w-[480px] md:w-[380px] sm:w-[320px] absolute w-[172px] lg:mr-[320px] md:mr-[290px] sm:mr-[250px] mr-[120px]"
-          >
-            <img src={phoneOne} alt="" className=" rotate-[-50deg]"/>
-          </motion.div>
-          <motion.div 
-          animate={animationTwo}
-          className="lg:w-[480px] md:w-[380px] sm:w-[320px] w-[172px] absolute lg:left-[49%] md:left-[47%] sm:left-[46.9%] left-[44%] top-0">
-            <img src={phoneOne} alt="" />
-          </motion.div>
-        </motion.section>
-        {/* medium screen animation ends */}
 
       </article>
     </>

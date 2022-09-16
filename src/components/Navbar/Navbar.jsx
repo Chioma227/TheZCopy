@@ -7,7 +7,7 @@ export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className="w-full bg-white lg:px-[5rem]  md:px-8 sm:px-12 px-6">
+    <nav className="w-full bg-white lg:px-[7rem]  md:px-8 sm:px-12 px-6">
       <div className="mx-auto  justify-between md:items-center md:flex">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">

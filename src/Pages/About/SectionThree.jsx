@@ -5,7 +5,7 @@ import check from "../../images/checkIcon.png";
 const SectionThree = () => {
   return (
     <>
-      <article className="lg:flex md:flex hidden items-center justify-between w-full ml-auto mr-auto lg:px-20 md:px-[2.5rem] lg:mb-20">
+      <article className="lg:flex md:flex hidden items-center gap-[3rem] w-full ml-auto mr-auto lg:px-[7rem] md:px-[2.5rem] lg:mb-[8rem]">
         <main className="about_section flex-grow-2 flex-shrink-1">
           <aside>
             <section className="bg-white w-[100%] shadow-md rounded-tl-3xl rounded-tr-sm rounded-b-sm mt-5">
@@ -56,7 +56,7 @@ const SectionThree = () => {
           </aside>
         </main>
         <section className="flex-1 flex-basis">
-         <div className="ml-auto lg:w-[90%] md:w-[300px] sm:w-[250px] w-[200px] ">
+         <div className="ml-auto lg:w-[350px] md:w-[300px] sm:w-[250px] w-[200px] ">
          <img src={imageOne} alt="" className="w-[100%] single" />
          </div>
         </section>

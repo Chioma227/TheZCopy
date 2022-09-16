@@ -6,7 +6,7 @@ import playStoreLogo from "../../images/Google Play logo.png";
 const DownloadApp = () => {
   return (
     <>
-      <main className="w-full h-fit lg:px-20 md:px-10 mb-2">
+      <main className="w-full h-fit lg:px-[7rem] md:px-10 mb-2">
         <section className="bg-darkblue-100 text-white lg:px-9 md:px-6 xs:px-5 py-12 lg:flex md:items-start sm:items-start sm:px-5  lg:flex-row md:flex md:flex-col-reverse sm:flex sm:flex-col-reverse flex flex-col-reverse  lg:items-center justify-between">
           <div className="lg:w-[69%] md:w-[79%] w-[100%]">
             <h2 className="font-bold lg:text-4xl md:text-2xl lg:mb-3 md:mb-2 sm:mb-2 xs:mb-2 leading-5 transition-all">

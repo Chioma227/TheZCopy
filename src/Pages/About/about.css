@@ -1,11 +1,3 @@
 .about_section{
     flex: 2 1;
 }
-/* .single{
-    width: 100%;
-} */
-
-
-.flex-basis {
-    flex-basis: 14% !important;
-}
