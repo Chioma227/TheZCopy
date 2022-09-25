@@ -59,21 +59,21 @@ export default function NavBar() {
             }`}
           >
             
-            <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              <li className="text-gray-800 transition-all">
+            <ul className="items-center justify-center space-y-5 md:flex lg:space-x-[80px] md:space-x-[45px] md:space-y-0">
+              <li className="text-gray-800 md:text-base text-sm transition-all">
                 <Link to="/" className="hover:text-gray-900 hover:no-underline">Home</Link>
               </li>
-              <li className="text-gray-800  transition-all">
+              <li className="text-gray-800 md:text-base text-sm  transition-all">
                 <Link to="/about" className="hover:text-gray-900 hover:no-underline">About App</Link>
               </li>
-              <li className="text-gray-800  transition-all">
+              <li className="text-gray-800 md:text-base text-sm  transition-all">
                 <Link to="/testimonials" className="hover:text-gray-900 hover:no-underline">Testimonials</Link>
               </li>
-              <li className="text-gray-800  transition-all">
+              <li className="text-gray-800 md:text-base text-sm  transition-all">
                 <Link to="/faqs" className="hover:text-gray-900 hover:no-underline">FAQs</Link>
               </li>
               <div>
-              <button className="bg-darkblue-100 text-white px-4 py-2 rounded-md">
+              <button className="bg-darkblue-100 text-white md:text-base text-sm md:px-4 xs:px-[10px] py-2 rounded-md">
                 Download App
               </button>
             </div>

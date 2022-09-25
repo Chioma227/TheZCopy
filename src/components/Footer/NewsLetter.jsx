@@ -33,9 +33,6 @@ const NewsLetter = ({ message, status, onValidated }) => {
     }
   };
 
- 
-
-  
   return (
     <>
       <div className="relative w-fit h-fit">
@@ -64,15 +61,3 @@ const NewsLetter = ({ message, status, onValidated }) => {
 };
 
 export default NewsLetter;
-
-
-  //   const getMessage = (message)=>{
-  //     if(!message){
-  //         return null;
-  //     }
-
-  //     const result = message?.split("-") ?? null
-  //     if ("0" !== result?.[0]){
-
-  //     }
-  //   }

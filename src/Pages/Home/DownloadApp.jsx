@@ -2,6 +2,7 @@ import React from "react";
 import phoneGroup from "../../images/Group 125.png";
 import appleLogo from "../../images/Apple logo.png";
 import playStoreLogo from "../../images/Google Play logo.png";
+import { useState } from "react";
 
 const DownloadApp = () => {
   return (
@@ -16,7 +17,7 @@ const DownloadApp = () => {
             <p className="lg:text-sm md:text-xs font-sans w-[89%] xs:text-[.8rem] transition-all">
               Download TheZ Finance Mobile App from Google Playstore and
               Appstore to enjoy seamless transaction of your favourite crypto
-              currency quickly and with ease
+              currency quickly and with ease.
             </p>
             <div className="flex lg:gap-5 md:gap-4 xs:gap-2 mt-10">
               <a
@@ -26,7 +27,11 @@ const DownloadApp = () => {
                 className="bg-gray-900 flex items-center lg:gap-5 sm:gap-3  md:gap-3 xs:gap-3 lg:px-3 md:px-2 sm:px-2 xs:px-2 rounded-md hover:no-underline hover:text-white py-1 border"
               >
                 <div>
-                  <img src={appleLogo} alt="" className="lg:w-[30px] md:w-[25px] sm:w-[20px] xs:w-[18px]" />
+                  <img
+                    src={appleLogo}
+                    alt=""
+                    className="lg:w-[30px] md:w-[25px] sm:w-[20px] xs:w-[18px]"
+                  />
                 </div>
                 <div>
                   <p className="m-0 font-sans tracking-tighter text-sm">
@@ -45,7 +50,11 @@ const DownloadApp = () => {
                 className="bg-gray-900 flex items-center lg:gap-5 sm:gap-3  lg:px-3 md:px-2 sm:px-2 xs:px-2 rounded-md hover:no-underline hover:text-white border"
               >
                 <div>
-                  <img src={playStoreLogo} alt="" className="lg:w-[30px] md:w-[25px] sm:w-[20px] xs:w-[18px]" />
+                  <img
+                    src={playStoreLogo}
+                    alt=""
+                    className="lg:w-[30px] md:w-[25px] sm:w-[20px] xs:w-[18px]"
+                  />
                 </div>
                 <div>
                   <p className="font-sans tracking-tighter lg:text-sm md:text-xs">
@@ -62,6 +71,7 @@ const DownloadApp = () => {
             <img src={phoneGroup} alt="" />
           </div>
         </section>
+        
       </main>
     </>
   );
